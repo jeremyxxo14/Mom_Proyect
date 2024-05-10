@@ -22,7 +22,7 @@ export default function Inicio({ onLogin }) {
     event.preventDefault();
     // Validar que se haya ingresado un nombre y una fecha de cumpleaños
     if (nombre.trim() === "" || fechaCumpleaños.trim() === "") {
-      setMensajeError("Por favor ingresa su Nombre y La Fecha de su Hijo Mayor.");
+      setMensajeError("Por favor ingresa su Nombre y La Fecha Correcta.");
     } else {
       // Aquí puedes verificar si la fecha de cumpleaños y el nombre son correctos
       // Por ejemplo, podrías compararlos con los valores correctos
