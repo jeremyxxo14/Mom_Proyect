@@ -57,8 +57,8 @@ body {
   }
 
   h2{
-    color: #000000;
-    -webkit-text-stroke: 1px rgb(0, 0, 0); /* Contorno de 1 píxel de ancho en color negro */
+    color: #f3f3f3;
+    -webkit-text-stroke: 0.1px rgb(17, 17, 17); /* Contorno de 1 píxel de ancho en color negro */
     background-color: #dd7f86;
     border-radius: 15px;
     padding: 10px 10px;
@@ -136,15 +136,15 @@ body {
 
   .fondo-generalc {
     background-image: url('/abtract.jpg'); /* URL de la imagen de fondo */
-    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el elemento */
-    background-repeat: no-repeat; /* Color de fondo general */
+    background-size: contain; /* Ajusta el tamaño de la imagen para cubrir todo el elemento */
+    background-repeat: repeat; /* Color de fondo general */
     min-height: 100%; /* Altura mínima para que ocupe toda la pantalla */
     display: flex;
     z-index: 99;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 10% 10% 30% 10%;
+    padding: 10% 10%;
   }
 
 
@@ -178,7 +178,13 @@ body {
 
   .button-1{
       color: #ffffff;
-      background-color: #535353;
+      background-color: #dd7f86;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      box-shadow: 0px 6px 10px 5px rgba(0, 0, 0, 0.1);
   }
 
 
@@ -319,7 +325,7 @@ body {
   }
   
   .fondo-general form label {
-    margin-bottom: 5px;
+    margin: 10px 0;
   }
   
   .fondo-general form input {
@@ -338,6 +344,7 @@ body {
     border-radius: 5px;
     cursor: pointer;
     box-shadow: 0px 6px 10px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
   }
   
   .fondo-general form button:hover {

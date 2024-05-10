@@ -1,5 +1,5 @@
 
-import React from "react";
+import React, { useState } from "react";
 
 export default function Galeria() {
   // Array de nombres de archivos de las imágenes (reemplaza con los nombres de tus archivos)
