@@ -1,15 +1,18 @@
 
+import React, { useState } from "react";
+
 export default function Carta() {
+  const [isOpen, setIsOpen] = useState(false); // Estado para controlar si la carta está abierta
 
-
-
-
-
+  const handleOpen = () => {
+    setIsOpen(true); // Función para abrir la carta
+  };
 
 
     return (
         <div className="fondo-generalc">
             <div className="carta">
+            {isOpen ? ( // Si la carta está abierta, mostrar el texto
                 <p>Querida mamá,
 
 Hoy quiero tomar un momento para expresarte todo el amor y la gratitud que siento hacia ti. En este día especial, quiero recordarte lo increíble que eres y lo afortunado que me siento de tenerte como madre.
@@ -24,9 +27,12 @@ Hoy, en este día especial, quiero recordarte lo especial que eres para mí. Ere
 
 Gracias por ser la mejor mamá que alguien podría pedir. Te quiero más de lo que las palabras pueden expresar.
 
-Con todo mi amor. </p>
-Atte. Jeremy TU hijo Mayor
-
+Con todo mi amor.
+Atte. Jeremy TU hijo Mayor  
+</p>
+) : ( // Si la carta no está abierta, mostrar el botón para abrir la carta
+<button className="button-1" onClick={handleOpen}>Haz click para abrir la carta</button>
+)}
             </div>
         </div>
     )
