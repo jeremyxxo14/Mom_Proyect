@@ -12,9 +12,9 @@ export default function App() {
     <Router>
       <div>
         <Header />
+        <Inicio/>
         <Routes>
-          <Route path="/carta" element={<Carta />} />
-          <Route path="/inicio" element={<Inicio />} />
+
           <Route path="/galeria" element={<Galeria />} />
         </Routes>
         <Footer />
