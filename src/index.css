@@ -27,7 +27,7 @@ body {
 
   .titulo {
     color: #ffffff; /* Color del texto del título */
-    font-size: 20px;
+    font-size: 15px;
     margin-left: 10px;
     font-family: "Pacifico", cursive;
     font-weight: 900;
@@ -38,10 +38,10 @@ body {
     z-index: 1000;
   }
   .img-titulo{
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     position: relative;
-    right: 170px;
+    right: 120px;
     z-index: -1;
   }
 
@@ -65,7 +65,7 @@ body {
 
   @media only screen and (max-width: 768px) {
     .titulo {
-      font-size: 15px;
+      font-size: 10px;
     }
 
     .boton-menu {
