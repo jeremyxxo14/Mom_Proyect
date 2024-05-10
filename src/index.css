@@ -3,6 +3,17 @@ body {
     font-family: "Pacifico", cursive;
   }
 
+  @keyframes mover-corazon {
+
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+  }
+  
+  .img-titulo {
+    animation: mover-corazon 2s infinite;
+  }
+
   .titulo {
     text-decoration: none; /* Elimina el subrayado */
     color: inherit; /* Hereda el color del elemento padre */
@@ -76,14 +87,14 @@ body {
 
   @media only screen and (min-width: 350px) {
     .titulo {
-      font-size: px;
+      font-size: 9px;
     }
 
     .img-titulo{
       width: 80px;
       height: 80px;
       position: relative;
-      right: 117px;
+      right: 110px;
       z-index: -1;
     }
 
