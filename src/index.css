@@ -46,11 +46,11 @@ body {
   }
 
   h2{
-    color: #ffffff;
+    color: #000000;
     -webkit-text-stroke: 1px rgb(0, 0, 0); /* Contorno de 1 píxel de ancho en color negro */
-    background-color: #ffffff;
+    background-color: #dd7f86;
     border-radius: 15px;
-    padding: 10px 20px;
+    padding: 10px 10px;
     
   }
 
@@ -83,7 +83,7 @@ body {
       width: 80px;
       height: 80px;
       position: relative;
-      right: 106px;
+      right: 117px;
       z-index: -1;
     }
 
@@ -296,9 +296,9 @@ body {
   /* Estilos para el título */
 .fondo-general h2 {
     text-align: center;
-    color: #ffffff;
+    color: #ededed;
     font-size: 20px;
-    -webkit-text-stroke: 1px rgb(0, 0, 0); /* Contorno de 1 píxel de ancho en color negro */
+    
   }
   
   /* Estilos para los campos del formulario */
