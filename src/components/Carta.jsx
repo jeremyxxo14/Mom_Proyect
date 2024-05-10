@@ -1,14 +1,14 @@
 
 export default function Carta() {
 
-    
+
 
 
 
 
 
     return (
-        <div className="fondo-general">
+        <div className="fondo-generalc">
             <div className="carta">
                 <p>Querida mamá,
 

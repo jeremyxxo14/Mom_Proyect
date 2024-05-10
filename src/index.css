@@ -50,16 +50,38 @@ body {
     }
   }
 
-
-  .fondo-general {
+  .fondo-generalc {
     background-color: #DD969C; /* Color de fondo general */
-    min-height: 88vh; /* Altura mínima para que ocupe toda la pantalla */
+    min-height: 100%; /* Altura mínima para que ocupe toda la pantalla */
     display: flex;
     z-index: 99;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    justify-content: center;
+    padding: 10% 10% 30% 10%;
+  }
+
+
+  .fondo-general {
+    background-color: #DD969C; /* Color de fondo general */
+    min-height: 100%; /* Altura mínima para que ocupe toda la pantalla */
+    display: flex;
+    z-index: 99;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20% 20% 75% 20%;
+  }
+
+  .fondo-generalG {
+    background-color: #DD969C; /* Color de fondo general */
+    min-height: 100%; /* Altura mínima para que ocupe toda la pantalla */
+    display: flex;
+    z-index: 99;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px 20% 10% 20%;
   }
 
 
@@ -228,3 +250,8 @@ body {
     font-style: normal;
     background-color: red;
   }
+
+
+  
+
+  

@@ -29,7 +29,7 @@ export default function Galeria() {
   ];
 
   return (
-    <div className="fondo-general">
+    <div className="fondo-generalG">
       <h2>Galería de Fotos</h2>
       <div className="galeria">
         {imageNames.map((imageName, index) => (

@@ -33,6 +33,9 @@ function MenuDesplegable() {
             <NavLink to="/galeria" onClick={toggleMenu}>
               Galería
             </NavLink>
+            <NavLink to="/carta" onClick={toggleMenu}>
+              Carta
+            </NavLink>
           </div>
         )}
       </div>
