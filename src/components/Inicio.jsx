@@ -42,8 +42,8 @@ export default function Inicio({ onLogin }) {
 
   return (
     <div className="fondo-general">
-      <h2>Inicio de Sesión</h2>
       <div className="fondo-form">
+      <h2>Inicio de Sesión</h2>
       
       <form onSubmit={handleSubmit}>
         <div className="input1">

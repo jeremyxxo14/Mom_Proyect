@@ -24,18 +24,18 @@ body {
   }
 
   .titulo {
-    color: #000000; /* Color del texto del título */
+    color: #ffffff; /* Color del texto del título */
     font-size: 20px;
     margin-left: 10px;
     font-family: "Pacifico", cursive;
     font-weight: 900;
     font-style: normal;
-    -webkit-text-stroke: .1px rgb(255, 255, 255); /* Contorno de 1 píxel de ancho en color negro */
+    -webkit-text-stroke: 1px rgb(0, 0, 0); /* Contorno de 1 píxel de ancho en color negro */
   }
 
   h2{
-    color: #000000;
-    -webkit-text-stroke: .1px rgb(255, 255, 255); /* Contorno de 1 píxel de ancho en color negro */
+    color: #ffffff;
+    -webkit-text-stroke: 1px rgb(0, 0, 0); /* Contorno de 1 píxel de ancho en color negro */
   }
 
   .boton-menu {
@@ -88,7 +88,9 @@ body {
   }
 
   .fondo-generalc {
-    background-color: #DD969C; /* Color de fondo general */
+    background-image: url('/abtract.jpg'); /* URL de la imagen de fondo */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el elemento */
+    background-repeat: no-repeat; /* Color de fondo general */
     min-height: 100%; /* Altura mínima para que ocupe toda la pantalla */
     display: flex;
     z-index: 99;
@@ -100,7 +102,9 @@ body {
 
 
   .fondo-general {
-    background-color: #DD969C; /* Color de fondo general */
+    background-image: url('/abtract.jpg'); /* URL de la imagen de fondo */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el elemento */
+    background-repeat: no-repeat; /* Color de fondo general */
     min-height: 100%; /* Altura mínima para que ocupe toda la pantalla */
     display: flex;
     z-index: 99;
@@ -111,7 +115,9 @@ body {
   }
 
   .fondo-generalG {
-    background-color: #DD969C; /* Color de fondo general */
+    background-image: url('/abtract.jpg'); /* URL de la imagen de fondo */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el elemento */
+    background-repeat: no-repeat; /* Color de fondo general */
     min-height: 100%; /* Altura mínima para que ocupe toda la pantalla */
     display: flex;
     z-index: 99;
@@ -245,9 +251,9 @@ body {
   /* Estilos para el título */
 .fondo-general h2 {
     text-align: center;
-    color: #000000;
+    color: #ffffff;
     font-size: 30px;
-    -webkit-text-stroke: .1px rgb(255, 255, 255); /* Contorno de 1 píxel de ancho en color negro */
+    -webkit-text-stroke: 1px rgb(0, 0, 0); /* Contorno de 1 píxel de ancho en color negro */
   }
   
   /* Estilos para los campos del formulario */
@@ -269,7 +275,7 @@ body {
   
   /* Estilos para el botón de enviar */
   .fondo-general form button {
-    background-color: #4c4c4c;
+    background-color: #010101;
     color: #fff;
     padding: 10px;
     border: none;
