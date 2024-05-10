@@ -13,7 +13,7 @@ export default function Inicio({ onLogin }) {
     if (mensajeError) {
       timer = setTimeout(() => {
         setMensajeError("");
-      }, 1000); // Ocultar el mensaje después de 1 segundo
+      }, 3000); // Ocultar el mensaje después de 1 segundo
     }
     return () => clearTimeout(timer);
   }, [mensajeError]);
@@ -22,7 +22,7 @@ export default function Inicio({ onLogin }) {
     event.preventDefault();
     // Validar que se haya ingresado un nombre y una fecha de cumpleaños
     if (nombre.trim() === "" || fechaCumpleaños.trim() === "") {
-      setMensajeError("Por favor ingresa tu nombre y fecha de cumpleaños.");
+      setMensajeError("Por favor ingresa su Nombre y La Fecha de su Hijo Mayor.");
     } else {
       // Aquí puedes verificar si la fecha de cumpleaños y el nombre son correctos
       // Por ejemplo, podrías compararlos con los valores correctos
@@ -43,21 +43,20 @@ export default function Inicio({ onLogin }) {
   return (
     <div className="fondo-general">
       <h2>Inicio de Sesión</h2>
+      <div className="fondo-form">
+      
       <form onSubmit={handleSubmit}>
-        <div className="label1">
-          <label>Nombre:</label>
-        </div>
-        <div>
+        <div className="input1">
+          <label>Ingrese su Nombre Completo:</label>
           <input
             type="text"
             value={nombre}
             onChange={(event) => setNombre(event.target.value)}
           />
         </div>
-        <div className="label1">
-          <label>Fecha de Cumpleaños:</label>
-        </div>
-        <div>
+        
+        <div className="input1">
+          <label>Fecha del Cumpleaños de su Hijo Mayor:</label>
           <input
             type="date"
             value={fechaCumpleaños}
@@ -67,7 +66,10 @@ export default function Inicio({ onLogin }) {
         <button type="submit">Iniciar Sesión</button>
         {mensajeError && <div className="mensaje-error">{mensajeError}</div>}
       </form>
+      </div>
     </div>
+
+    
   );
 }
 
