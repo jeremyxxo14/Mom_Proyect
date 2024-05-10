@@ -1,0 +1,221 @@
+body {
+    margin: 0;
+    font-family: "Pacifico", cursive;
+    font-weight: 900;
+    font-style: normal;
+  }
+
+  header {
+    background-color: #dd7f86; /* Color de fondo del encabezado */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 5px 5px -5px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    border-bottom: 1px solid #df535a;
+  }
+
+  .titulo {
+    color: #ffffff; /* Color del texto del título */
+    font-size: 20px;
+    margin-left: 10px;
+  }
+
+  .boton-menu {
+    background-color: transparent;
+    border: none;
+    color: #ffffff; /* Color del texto del botón */
+    font-size: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .titulo {
+      font-size: 16px;
+    }
+
+    .boton-menu {
+      font-size: 16px;
+    }
+  }
+
+
+  .fondo-general {
+    background-color: #DD969C; /* Color de fondo general */
+    min-height: 88vh; /* Altura mínima para que ocupe toda la pantalla */
+    display: flex;
+    z-index: 99;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+
+
+
+
+  .carta {
+    background-color: #ffffff; /* Color de fondo de la carta */
+    width: 80%;
+    max-width: 600px; /* Máximo ancho de la carta */
+    margin: 50px auto; /* Centrado horizontal */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5); /* Sombra */
+  }
+
+  .carta p {
+    text-align: center;
+    font-size: 18px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .carta {
+      width: 90%;
+    }
+  }
+
+
+
+
+
+  footer {
+    background-color: #dd7f86; /* Color de fondo del encabezado */
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    align-items: center;
+    border-top: 1px solid #df535a;
+  }
+
+  
+
+
+ 
+
+  @media only screen and (max-width: 768px) {
+    footer {
+      font-size: 14px;
+    }
+  }
+
+
+  .menu-desplegable {
+    position: relative;
+  }
+  
+  .opciones-menu {
+    position: absolute;
+    top: calc(100% + 5px); /* Posición debajo del botón */
+    background-color: white; /* Color de fondo */
+    border: 1px solid #ccc; /* Borde */
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra */
+  }
+  
+  .opciones-menu a {
+    display: block;
+    color: #333; /* Color del texto */
+    text-decoration: none;
+    padding: 5px;
+  }
+  
+  .opciones-menu a:hover {
+    background-color: #f0f0f0; /* Color de fondo al pasar el mouse */
+  }
+
+
+  //galeria
+
+
+  .fondo-general {
+    background-color: #DD969C; /* Color de fondo general */
+    min-height: 100vh; /* Altura mínima para que ocupe toda la pantalla */
+    display: flex;
+    z-index: 99;
+    
+  }
+
+  .galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Columnas automáticas */
+    gap: 20px; /* Espacio entre las imágenes */
+  }
+  
+  .imagen {
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .imagen img {
+    width: 100%;
+    display: block;
+    border-radius: 5px;
+    transition: transform 0.3s ease; /* Animación de transición */
+  }
+  
+  .imagen:hover img {
+    transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+  }
+
+
+
+  // inicio de sesion 
+
+
+  .label1 label {
+
+    color: #ffffff;
+
+  }
+
+  /* Estilos para el título */
+.fondo-general h2 {
+    text-align: center;
+    color: #000000;
+  }
+  
+  /* Estilos para los campos del formulario */
+  .fondo-general form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .fondo-general form label {
+    margin-bottom: 5px;
+  }
+  
+  .fondo-general form input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Estilos para el botón de enviar */
+  .fondo-general form button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .fondo-general form button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Estilos para el mensaje de error */
+  .mensaje-error {
+    color: #edebeb;
+    margin-top: 10px;
+    padding: 5px;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    background-color: red;
+  }
