@@ -8,6 +8,7 @@ export default function Header() {
     <header>
       <NavLink to="/" className="titulo">
         <h1>Feliz dia Mamá</h1>
+        <img className="img-titulo" src="/cora.png" alt="" />
       </NavLink>
       <div className="boton-menu">
         <MenuDesplegable />

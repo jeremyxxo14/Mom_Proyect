@@ -42,6 +42,7 @@ export default function Inicio({ onLogin }) {
 
   return (
     <div className="fondo-general">
+      <img src="/corazon1.png" alt="Logo" className="logo"/> {/* Aquí agregamos la imagen */}
       <div className="fondo-form">
       <h2>Inicio de Sesión</h2>
       
