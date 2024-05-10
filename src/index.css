@@ -184,7 +184,6 @@ body {
     box-shadow: inset 1px 2px 7px 1px rgba(0, 0, 0, 0.5);
     position: sticky;
     bottom: 0;
-    z-index: 10000;
   }
 
   

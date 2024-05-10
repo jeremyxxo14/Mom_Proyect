@@ -18,6 +18,25 @@ export default function Inicio({ onLogin }) {
     return () => clearTimeout(timer);
   }, [mensajeError]);
 
+  useEffect(() => {
+    const isLoggedIn = localStorage.getItem('isLoggedIn');
+    const loginTime = localStorage.getItem('loginTime');
+    
+    if (isLoggedIn && loginTime) {
+      const currentTime = new Date().getTime();
+      const timeDifference = currentTime - loginTime;
+      
+      // Si ha pasado más de una hora (3600000 milisegundos), cerrar la sesión
+      if (timeDifference > 3600000) {
+        localStorage.removeItem('isLoggedIn');
+        localStorage.removeItem('loginTime');
+      } else {
+        // Si el usuario ha iniciado sesión, redirigir a la página de carta
+        navigate("/carta");
+      }
+    }
+  }, []);
+
   const handleSubmit = (event) => {
     event.preventDefault();
     // Validar que se haya ingresado un nombre y una fecha de cumpleaños
@@ -31,8 +50,9 @@ export default function Inicio({ onLogin }) {
 
       if (nombre === nombreCorrecto && fechaCumpleaños === fechaCumpleañosCorrecta) {
         // Si el nombre y la fecha de cumpleaños son correctos, redirigir a la página de carta
-        navigate("/carta");
-        onLogin();
+      localStorage.setItem('isLoggedIn', true); // Guardar el estado de inicio de sesión
+      navigate("/carta");
+      onLogin();
       } else {
         // Si el nombre y/o la fecha de cumpleaños no son correctos, mostrar un mensaje de error
         setMensajeError("El nombre o la fecha de cumpleaños son incorrectos.");
