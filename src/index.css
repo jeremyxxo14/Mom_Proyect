@@ -41,7 +41,7 @@ body {
     width: 120px;
     height: 120px;
     position: relative;
-    right: 210px;
+    right: 170px;
     z-index: -1;
   }
 
@@ -51,6 +51,7 @@ body {
     background-color: #ffffff;
     border-radius: 15px;
     padding: 10px 20px;
+    
   }
 
   .boton-menu {
@@ -64,7 +65,7 @@ body {
 
   @media only screen and (max-width: 768px) {
     .titulo {
-      font-size: 20px;
+      font-size: 15px;
     }
 
     .boton-menu {
@@ -177,6 +178,7 @@ body {
     color: #ffffff;
     text-align: center;
     padding: 10px;
+    font-size: 20px;
     align-items: center;
     border-top: 1px solid #df535a;
     box-shadow: inset 1px 2px 7px 1px rgba(0, 0, 0, 0.5);
@@ -192,7 +194,7 @@ body {
 
   @media only screen and (max-width: 768px) {
     footer {
-      font-size: 14px;
+      font-size: 20px;
     }
   }
 
@@ -273,7 +275,7 @@ body {
 .fondo-general h2 {
     text-align: center;
     color: #ffffff;
-    font-size: 30px;
+    font-size: 20px;
     -webkit-text-stroke: 1px rgb(0, 0, 0); /* Contorno de 1 píxel de ancho en color negro */
   }
   
