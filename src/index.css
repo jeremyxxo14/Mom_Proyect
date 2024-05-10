@@ -29,9 +29,9 @@ body {
     color: #ffffff; /* Color del texto del título */
     font-size: 15px;
     margin-left: 10px;
-    font-family: "Pacifico", cursive;
-    font-weight: 900;
-    font-style: normal;
+    font-family: "Luckiest Guy", cursive;
+  font-weight: 400;
+  font-style: normal;
     -webkit-text-stroke: 1px rgb(0, 0, 0); /* Contorno de 1 píxel de ancho en color negro */
     display: flex;
     align-items: center;
@@ -66,28 +66,29 @@ body {
   @media only screen and (max-width: 768px) {
     .titulo {
       font-size: 10px;
+      
     }
 
     .boton-menu {
-      font-size: 20px;
+      font-size: 15px;
     }
   }
 
-  @media only screen and (min-width: 340px) {
+  @media only screen and (min-width: 350px) {
     .titulo {
-      font-size: 8px;
+      font-size: px;
     }
 
     .img-titulo{
       width: 80px;
       height: 80px;
       position: relative;
-      right: 95px;
+      right: 106px;
       z-index: -1;
     }
 
     .boton-menu {
-      font-size: 10px;
+      font-size:15px;
     }
   }
 
