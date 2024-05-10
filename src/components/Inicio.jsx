@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate  } from "react-router-dom";
 
-export default function Inicio() {
+export default function Inicio({ onLogin }) {
   const [nombre, setNombre] = useState("");
   const [fechaCumpleaños, setFechaCumpleaños] = useState("");
   const [mensajeError, setMensajeError] = useState("");
   const navigate = useNavigate(); // Obtener el objeto history para redirigir
+
 
   useEffect(() => {
     let timer;
@@ -31,6 +32,7 @@ export default function Inicio() {
       if (nombre === nombreCorrecto && fechaCumpleaños === fechaCumpleañosCorrecta) {
         // Si el nombre y la fecha de cumpleaños son correctos, redirigir a la página de carta
         navigate("/carta");
+        onLogin();
       } else {
         // Si el nombre y/o la fecha de cumpleaños no son correctos, mostrar un mensaje de error
         setMensajeError("El nombre o la fecha de cumpleaños son incorrectos.");

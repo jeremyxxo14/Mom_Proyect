@@ -1,5 +1,12 @@
 
 export default function Carta() {
+
+    
+
+
+
+
+
     return (
         <div className="fondo-general">
             <div className="carta">

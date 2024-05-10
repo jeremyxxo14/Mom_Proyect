@@ -5,6 +5,15 @@ body {
     font-style: normal;
   }
 
+  .titulo {
+    text-decoration: none; /* Elimina el subrayado */
+    color: inherit; /* Hereda el color del elemento padre */
+  }
+  
+  .titulo:hover {
+    text-decoration: none; /* Elimina el subrayado al pasar el mouse */
+  }
+
   header {
     background-color: #dd7f86; /* Color de fondo del encabezado */
     padding: 10px;

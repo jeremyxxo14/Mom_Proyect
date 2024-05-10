@@ -1,10 +1,14 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 
+
 export default function Header() {
+
   return (
     <header>
-      <h1 className="titulo">Feliz día, mamá</h1>
+      <NavLink to="/" className="titulo">
+        <h1>Feliz día, mamá</h1>
+      </NavLink>
       <div className="boton-menu">
         <MenuDesplegable />
       </div>
@@ -26,9 +30,6 @@ function MenuDesplegable() {
         </button>
         {menuVisible && (
           <div className="opciones-menu">
-            <NavLink to="/inicio" onClick={toggleMenu}>
-              Inicio
-            </NavLink>
             <NavLink to="/galeria" onClick={toggleMenu}>
               Galería
             </NavLink>
