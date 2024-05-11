@@ -6,7 +6,7 @@ export default function Header() {
 
   return (
     <header>
-      <NavLink to="/" className="titulo">
+      <NavLink to="/inicio" className="titulo">
         <h1>Feliz dia Mamá</h1>
         <img className="img-titulo" src="/cora.png" alt="" />
       </NavLink>
