@@ -42,12 +42,12 @@ export default function Inicio({ onLogin }) {
     event.preventDefault();
     // Validar que se haya ingresado un nombre y una fecha de cumpleaños
     if (acertijo.trim() === "" || fechaCumpleaños.trim() === "" || hijo.trim() ==="") {
-      setMensajeError("Por favor ingresa su Nombre y La Fecha Correcta.");
+      setMensajeError("Por favor ingresar datos y La Fecha Correcta.");
     } else {
       // Aquí puedes verificar si la fecha de cumpleaños y el nombre son correctos
       // Por ejemplo, podrías compararlos con los valores correctos
-      const acertijosCorrectos = ["Fideos con salsa", "Lasaña", "Arroz con pollo","Arroz con pollo al jugo"];
-      const hijosCorrectos = ["Jeremy", "Los tres", "Lostres", "los3", "los 3"];
+      const acertijosCorrectos = ["Fideos con salsa","Fideosconsalsa","Fideos", "Lasaña", "Arroz con pollo","Arroz con pollo al jugo"];
+      const hijosCorrectos = ["Jeremy", "Los tres", "Lostres", "los3", "los 3","jeremy"];
       const fechasCumpleañosCorrectas = ["2000-09-17", "17/09/2000"]; // Formato de fecha yyyy-mm-dd
       
       if (acertijosCorrectos.includes(acertijo) && fechasCumpleañosCorrectas.includes(fechaCumpleaños) && hijosCorrectos.includes(hijo)) {
@@ -58,7 +58,7 @@ export default function Inicio({ onLogin }) {
         onLogin();
       } else {
         // Si el nombre y/o la fecha de cumpleaños no son correctos, mostrar un mensaje de error
-        setMensajeError("El nombre o la fecha de cumpleaños son incorrectos.");
+        setMensajeError("Las prrguntas o la fecha de cumpleaños son incorrectos.");
       }
     }
   };

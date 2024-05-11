@@ -21,7 +21,6 @@ export default function App() {
           <Route path="/inicio" element={<Inicio onLogin={handleLogin} />} />
           {isLoggedIn && (
             <>
-              <Route path="/inicio" element={<Inicio />} />
               <Route path="/carta" element={<Carta />} />
               <Route path="/galeria" element={<Galeria />} />
             </>
