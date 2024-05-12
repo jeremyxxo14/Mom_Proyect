@@ -27,7 +27,6 @@ export default function Galeria() {
     "17.jpg",
     "16.jpg",
     "14.mp4",
-    "12.jpg",
     "02.jpg",
     "05.jpg",
     "01.jpg",
