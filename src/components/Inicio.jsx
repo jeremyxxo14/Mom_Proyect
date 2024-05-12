@@ -46,8 +46,8 @@ export default function Inicio({ onLogin }) {
     } else {
       // Aquí puedes verificar si la fecha de cumpleaños y el nombre son correctos
       // Por ejemplo, podrías compararlos con los valores correctos
-      const acertijosCorrectos = ["Fideos con salsa","Fideosconsalsa","Fideos", "Lasaña", "Arroz con pollo","Arroz con pollo al jugo"];
-      const hijosCorrectos = ["Jeremy", "Los tres", "Lostres", "los3", "los 3","jeremy", "Pipe","Agustin"];
+      const acertijosCorrectos = ["Fideos con salsa","Fideos con salsa ","Fideosconsalsa","Fideos", "Lasaña", "Arroz con pollo","Arroz con pollo al jugo"];
+      const hijosCorrectos = ["Jeremy", "Los tres", "Lostres", "los3", "los 3","Los3", "Los 3","jeremy", "Pipe","Agustin","pipe","agustin"];
       const fechasCumpleañosCorrectas = ["2000-09-17", "17/09/2000"]; // Formato de fecha yyyy-mm-dd
       
       if (acertijosCorrectos.includes(acertijo) && fechasCumpleañosCorrectas.includes(fechaCumpleaños) && hijosCorrectos.includes(hijo)) {
@@ -67,7 +67,7 @@ export default function Inicio({ onLogin }) {
     <div className="fondo-general">
       <img src="/corazon1.png" alt="Logo" className="logo"/> {/* Aquí agregamos la imagen */}
       <div className="fondo-form">
-      <h2>Para Ingresar Verifique si es mi Madre con estas "Sencillas Preguntas"</h2>
+      <h2>Para Ingresar y obtener la recompensa Verifique si es mi Madre con estas "Sencillas Preguntas"</h2>
       
       <form onSubmit={handleSubmit}>
         <div className="input1">
@@ -88,6 +88,7 @@ export default function Inicio({ onLogin }) {
             onChange={(event) => setHijo(event.target.value)}
           />
         </div>
+        
         
         <div className="input1">
           <label>Fecha del Cumpleaños de su Hijo Mayor:</label>

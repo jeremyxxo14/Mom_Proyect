@@ -144,7 +144,7 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 10% 10%;
+    padding: 0px 5%;
   }
 
 
@@ -173,7 +173,7 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 10px 20% 10% 20%;
+    padding-top: 10px;
   }
 
   .button-1{
@@ -200,12 +200,12 @@ body {
 
   .carta p {
     text-align: center;
-    font-size: 18px;
+    font-size: 15px;
   }
 
   @media only screen and (max-width: 768px) {
     .carta {
-      width: 90%;
+      width: 80%;
     }
   }
 
@@ -279,23 +279,23 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Columnas automáticas */
     gap: 20px; /* Espacio entre las imágenes */
-  }
+}
   
-  .imagen {
+.imagen {
     border-radius: 5px;
     overflow: hidden;
-  }
+}
   
-  .imagen img {
+.imagen img, .imagen video {
     width: 100%;
     display: block;
     border-radius: 5px;
     transition: transform 0.3s ease; /* Animación de transición */
-  }
+}
   
-  .imagen:hover img {
+.imagen:hover img, .imagen:hover video {
     transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
-  }
+}
 
 
 
